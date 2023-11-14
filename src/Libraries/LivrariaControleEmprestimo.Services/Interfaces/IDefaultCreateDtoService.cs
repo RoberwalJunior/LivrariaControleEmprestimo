@@ -1,4 +1,4 @@
-﻿namespace LivrariaControleEmprestimo.Domain.Interfaces.Services;
+﻿namespace LivrariaControleEmprestimo.Services.Interfaces;
 
 public interface IDefaultCreateDtoService<CreateDto> where CreateDto : class
 {

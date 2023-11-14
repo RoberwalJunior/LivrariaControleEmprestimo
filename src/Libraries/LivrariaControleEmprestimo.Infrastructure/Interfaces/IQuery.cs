@@ -1,4 +1,4 @@
-﻿namespace LivrariaControleEmprestimo.Domain.Interfaces;
+﻿namespace LivrariaControleEmprestimo.Infrastructure.Interfaces;
 
 public interface IQuery<T> where T : class
 {

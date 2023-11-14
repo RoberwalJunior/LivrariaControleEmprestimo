@@ -1,6 +1,6 @@
 ﻿using LivrariaControleEmprestimo.Domain.Entities;
-using LivrariaControleEmprestimo.Domain.Interfaces.Daos;
 using LivrariaControleEmprestimo.Infrastructure.Daos.EfCore;
+using LivrariaControleEmprestimo.Infrastructure.Interfaces.Handlers;
 
 namespace LivrariaControleEmprestimo.Infrastructure.Daos;
 

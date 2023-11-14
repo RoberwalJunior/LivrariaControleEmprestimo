@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using LivrariaControleEmprestimo.Domain.Dtos;
 using LivrariaControleEmprestimo.Domain.Entities;
-using LivrariaControleEmprestimo.Domain.Interfaces.Daos;
-using LivrariaControleEmprestimo.Domain.Interfaces.Services.Handlers;
+using LivrariaControleEmprestimo.Infrastructure.Interfaces.Handlers;
+using LivrariaControleEmprestimo.Services.Interfaces.Handlers;
 
-namespace LivrariaControleEmprestimo.Services.Service;
+namespace LivrariaControleEmprestimo.Services;
 
 public class LivroService : IDefaultLivroService
 {

@@ -1,4 +1,4 @@
-﻿namespace LivrariaControleEmprestimo.Domain.Interfaces.Services;
+﻿namespace LivrariaControleEmprestimo.Services.Interfaces;
 
 public interface IDefaultUpdateDtoService<UpdateDto> where UpdateDto : class
 {
