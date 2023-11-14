@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LivrariaControleEmprestimo.Domain.Entities;
 
-namespace LivrariaControleEmprestimo.Infrastructure.Contexts;
+namespace LivrariaControleEmprestimo.Infrastructure.Daos.EfCore;
 
 public class LivrariaControleEmprestimoContext : DbContext
 {
@@ -10,9 +10,9 @@ public class LivrariaControleEmprestimoContext : DbContext
     {
     }
 
-    public virtual DbSet<Cliente> Cliente { get; set; }
-    public virtual DbSet<Livro> Livro { get; set; }
-    public virtual DbSet<LivroClienteEmprestimo> LivroClienteEmprestimo { get; set; }
+    public virtual DbSet<Livro> Livros { get; set; }
+    public virtual DbSet<Cliente> Clientes { get; set; }
+    public virtual DbSet<LivroClienteEmprestimo> Emprestimos { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

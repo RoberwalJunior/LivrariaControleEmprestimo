@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LivrariaControleEmprestimo.Domain.Interfaces;
-using LivrariaControleEmprestimo.Infrastructure.Contexts;
 
 namespace LivrariaControleEmprestimo.Infrastructure.Daos.EfCore;
 
