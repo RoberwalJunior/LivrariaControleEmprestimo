@@ -3,9 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4CEC584-DD91-44DD-B105-5289DB6F962C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{0DBA7B44-203E-45C2-846C-C1313A8BC225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaControleEmprestimo.Domain", "src\Libraries\LivrariaControleEmprestimo.Domain\LivrariaControleEmprestimo.Domain.csproj", "{ED610195-69DF-403B-846C-9DF49B2DBF80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaControleEmprestimo.Infrastructure", "src\Libraries\LivrariaControleEmprestimo.Infrastructure\LivrariaControleEmprestimo.Infrastructure.csproj", "{E4D6246E-BDFB-4C4B-9707-EEAF89BB501A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED610195-69DF-403B-846C-9DF49B2DBF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED610195-69DF-403B-846C-9DF49B2DBF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED610195-69DF-403B-846C-9DF49B2DBF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED610195-69DF-403B-846C-9DF49B2DBF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4D6246E-BDFB-4C4B-9707-EEAF89BB501A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4D6246E-BDFB-4C4B-9707-EEAF89BB501A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4D6246E-BDFB-4C4B-9707-EEAF89BB501A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4D6246E-BDFB-4C4B-9707-EEAF89BB501A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DBA7B44-203E-45C2-846C-C1313A8BC225} = {C4CEC584-DD91-44DD-B105-5289DB6F962C}
+		{ED610195-69DF-403B-846C-9DF49B2DBF80} = {0DBA7B44-203E-45C2-846C-C1313A8BC225}
+		{E4D6246E-BDFB-4C4B-9707-EEAF89BB501A} = {0DBA7B44-203E-45C2-846C-C1313A8BC225}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1200056F-A006-454C-89F5-AF33BCECD4A9}
