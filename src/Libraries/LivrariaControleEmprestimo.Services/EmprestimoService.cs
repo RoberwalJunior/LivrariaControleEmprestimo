@@ -6,12 +6,12 @@ using LivrariaControleEmprestimo.Services.Interfaces.Handlers;
 
 namespace LivrariaControleEmprestimo.Services;
 
-public class LivroLivroClienteEmprestimoEmprestimoService : IDefaultEmprestimoService
+public class EmprestimoService : IDefaultEmprestimoService
 {
     private IMapper _mapper;
     private readonly IEmprestimoDao _emprestimoDao;
 
-    public LivroLivroClienteEmprestimoEmprestimoService(IMapper mapper, IEmprestimoDao emprestimoDao)
+    public EmprestimoService(IMapper mapper, IEmprestimoDao emprestimoDao)
     {
         _mapper = mapper;
         _emprestimoDao = emprestimoDao;

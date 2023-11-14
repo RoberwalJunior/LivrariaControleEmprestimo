@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaControleEmprestimo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaControleEmprestimo.Services", "src\Libraries\LivrariaControleEmprestimo.Services\LivrariaControleEmprestimo.Services.csproj", "{21855F57-48E7-46A7-A067-FD3191E6D3AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaControleEmprestimo.API", "src\Api\LivrariaControleEmprestimo.API\LivrariaControleEmprestimo.API.csproj", "{40965A72-EAE5-4D3E-9AD0-44F87665E29C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{21855F57-48E7-46A7-A067-FD3191E6D3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21855F57-48E7-46A7-A067-FD3191E6D3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21855F57-48E7-46A7-A067-FD3191E6D3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40965A72-EAE5-4D3E-9AD0-44F87665E29C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40965A72-EAE5-4D3E-9AD0-44F87665E29C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40965A72-EAE5-4D3E-9AD0-44F87665E29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40965A72-EAE5-4D3E-9AD0-44F87665E29C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +46,7 @@ Global
 		{ED610195-69DF-403B-846C-9DF49B2DBF80} = {0DBA7B44-203E-45C2-846C-C1313A8BC225}
 		{E4D6246E-BDFB-4C4B-9707-EEAF89BB501A} = {0DBA7B44-203E-45C2-846C-C1313A8BC225}
 		{21855F57-48E7-46A7-A067-FD3191E6D3AE} = {0DBA7B44-203E-45C2-846C-C1313A8BC225}
+		{40965A72-EAE5-4D3E-9AD0-44F87665E29C} = {C4CEC584-DD91-44DD-B105-5289DB6F962C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1200056F-A006-454C-89F5-AF33BCECD4A9}
