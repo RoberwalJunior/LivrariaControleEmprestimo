@@ -2,6 +2,6 @@
 
 namespace LivrariaControleEmprestimo.Infrastructure.Interfaces.Handlers;
 
-public interface ILivroClienteEmprestimoDao : IDefault<LivroClienteEmprestimo>
+public interface IEmprestimoDao : IDefault<Emprestimo>
 {
 }

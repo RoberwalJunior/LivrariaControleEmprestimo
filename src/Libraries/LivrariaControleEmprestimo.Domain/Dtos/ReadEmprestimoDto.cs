@@ -1,6 +1,6 @@
 ﻿namespace LivrariaControleEmprestimo.Domain.Dtos;
 
-public class ReadLivroClienteEmprestimoDto
+public class ReadEmprestimoDto
 {
     public ReadClienteDto Cliente { get; set; }
     public ReadLivroDto Livro { get; set; }

@@ -2,7 +2,7 @@
 
 namespace LivrariaControleEmprestimo.Domain.Entities;
 
-public class LivroClienteEmprestimo
+public class Emprestimo
 {
     public int ClienteId { get; set; }
     public virtual Cliente Cliente { get; set; }

@@ -4,16 +4,16 @@ using LivrariaControleEmprestimo.Domain.Entities;
 
 namespace LivrariaControleEmprestimo.Domain.Profiles;
 
-public class LivroClienteEmprestimoProfile : Profile
+public class EmprestimoProfile : Profile
 {
-    public LivroClienteEmprestimoProfile()
+    public EmprestimoProfile()
     {
-        CreateMap<CreateLivroClienteEmprestimoDto, LivroClienteEmprestimo>();
-        CreateMap<LivroClienteEmprestimo, ReadLivroClienteEmprestimoDto>()
+        CreateMap<CreateEmprestimoDto, Emprestimo>();
+        CreateMap<Emprestimo, ReadEmprestimoDto>()
             .ForMember(emprestimoDto => emprestimoDto.Cliente,
                 opt => opt.MapFrom(emprestimo => emprestimo.Cliente))
             .ForMember(emprestimoDto => emprestimoDto.Livro,
                 opt => opt.MapFrom(emprestimo => emprestimo.Livro));
-        CreateMap<UpdateLivroClienteEmprestimoDto, LivroClienteEmprestimo>();
+        CreateMap<UpdateEmprestimoDto, Emprestimo>();
     }
 }

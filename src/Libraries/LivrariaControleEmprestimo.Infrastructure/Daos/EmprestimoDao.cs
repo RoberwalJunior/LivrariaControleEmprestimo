@@ -4,9 +4,9 @@ using LivrariaControleEmprestimo.Infrastructure.Interfaces.Handlers;
 
 namespace LivrariaControleEmprestimo.Infrastructure.Daos;
 
-public class LivroClienteEmprestimoDao : BaseDao<LivroClienteEmprestimo>, ILivroClienteEmprestimoDao
+public class EmprestimoDao : BaseDao<Emprestimo>, IEmprestimoDao
 {
-    public LivroClienteEmprestimoDao(LivrariaControleEmprestimoContext context) : base(context)
+    public EmprestimoDao(LivrariaControleEmprestimoContext context) : base(context)
     {
     }
 }

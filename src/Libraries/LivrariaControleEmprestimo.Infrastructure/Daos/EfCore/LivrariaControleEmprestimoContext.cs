@@ -12,19 +12,19 @@ public class LivrariaControleEmprestimoContext : DbContext
 
     public virtual DbSet<Livro> Livros { get; set; }
     public virtual DbSet<Cliente> Clientes { get; set; }
-    public virtual DbSet<LivroClienteEmprestimo> Emprestimos { get; set; }
+    public virtual DbSet<Emprestimo> Emprestimos { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<LivroClienteEmprestimo>()
+        modelBuilder.Entity<Emprestimo>()
             .HasKey(emprestimo => new { emprestimo.LivroId, emprestimo.ClienteId });
 
-        modelBuilder.Entity<LivroClienteEmprestimo>()
+        modelBuilder.Entity<Emprestimo>()
             .HasOne(emprestimo => emprestimo.Livro)
             .WithMany(livro => livro.Emprestimos)
             .HasForeignKey(emprestimo => emprestimo.LivroId);
 
-        modelBuilder.Entity<LivroClienteEmprestimo>()
+        modelBuilder.Entity<Emprestimo>()
             .HasOne(emprestimo => emprestimo.Cliente)
             .WithMany(cliente => cliente.Emprestimos)
             .HasForeignKey(emprestimo => emprestimo.ClienteId);

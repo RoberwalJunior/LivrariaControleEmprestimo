@@ -37,5 +37,5 @@ public class Cliente
     [MaxLength(13)]
     public string TelefoneFixo { get; set; }
 
-    public virtual ICollection<LivroClienteEmprestimo> Emprestimos { get; set; }
+    public virtual ICollection<Emprestimo> Emprestimos { get; set; }
 }

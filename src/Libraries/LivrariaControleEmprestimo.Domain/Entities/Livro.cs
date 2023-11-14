@@ -25,5 +25,5 @@ public class Livro
     [MaxLength(50)]
     public string Edicao { get; set; }
 
-    public virtual ICollection<LivroClienteEmprestimo> Emprestimos { get; set; }
+    public virtual ICollection<Emprestimo> Emprestimos { get; set; }
 }
