@@ -1,29 +1,24 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace LivrariaControleEmprestimo.Domain.Entities;
+namespace LivrariaControleEmprestimo.Domain.Dtos;
 
-public class Livro
+public class CreateLivroDto
 {
-    [Key]
-    public int Id { get; set; }
-
     [Required]
-    [MaxLength(50)]
+    [StringLength(50)]
     public string Nome { get; set; }
 
     [Required]
-    [MaxLength(200)]
+    [StringLength(200)]
     public string Autor { get; set; }
 
     [Required]
-    [MaxLength(100)]
+    [StringLength(100)]
     public string Editora { get; set; }
 
     [DataType(DataType.DateTime)]
     public DateTime AnoPublicacao { get; set; }
 
-    [MaxLength(50)]
+    [StringLength(50)]
     public string Edicao { get; set; }
-
-    public virtual ICollection<LivroClienteEmprestimo> Emprestimos { get; set; }
 }
