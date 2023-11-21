@@ -7,15 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4CEC584-DD9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{0DBA7B44-203E-45C2-846C-C1313A8BC225}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Libraries\Domain\Domain.csproj", "{090F10B7-4183-4491-A3CD-8E5C47BE2CE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Libraries\Domain\Domain.csproj", "{090F10B7-4183-4491-A3CD-8E5C47BE2CE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Libraries\Infrastructure\Infrastructure.csproj", "{4190F88C-820E-4557-AF9D-3C683C6DD716}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Libraries\Infrastructure\Infrastructure.csproj", "{4190F88C-820E-4557-AF9D-3C683C6DD716}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{AB9A32B2-D169-4AA4-942D-F6C7F233CCBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaApi", "src\Api\LivrariaApi\LivrariaApi.csproj", "{45E275D0-24A6-4CC6-B959-64D0000B2A00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LivrariaApi", "src\Api\LivrariaApi\LivrariaApi.csproj", "{45E275D0-24A6-4CC6-B959-64D0000B2A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "src\Libraries\Service\Service.csproj", "{12C1DAEA-6855-44F1-8DF2-7AF814CBE531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "src\Libraries\Service\Service.csproj", "{12C1DAEA-6855-44F1-8DF2-7AF814CBE531}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{3ECC42EC-07F5-4F2B-A246-BD7261FAB4ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaWeb", "src\Web\LivrariaWeb\LivrariaWeb.csproj", "{6726C7AF-6209-441B-BF39-CC86910D4BF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{12C1DAEA-6855-44F1-8DF2-7AF814CBE531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C1DAEA-6855-44F1-8DF2-7AF814CBE531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C1DAEA-6855-44F1-8DF2-7AF814CBE531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6726C7AF-6209-441B-BF39-CC86910D4BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6726C7AF-6209-441B-BF39-CC86910D4BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6726C7AF-6209-441B-BF39-CC86910D4BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6726C7AF-6209-441B-BF39-CC86910D4BF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,8 @@ Global
 		{AB9A32B2-D169-4AA4-942D-F6C7F233CCBA} = {C4CEC584-DD91-44DD-B105-5289DB6F962C}
 		{45E275D0-24A6-4CC6-B959-64D0000B2A00} = {AB9A32B2-D169-4AA4-942D-F6C7F233CCBA}
 		{12C1DAEA-6855-44F1-8DF2-7AF814CBE531} = {0DBA7B44-203E-45C2-846C-C1313A8BC225}
+		{3ECC42EC-07F5-4F2B-A246-BD7261FAB4ED} = {C4CEC584-DD91-44DD-B105-5289DB6F962C}
+		{6726C7AF-6209-441B-BF39-CC86910D4BF9} = {3ECC42EC-07F5-4F2B-A246-BD7261FAB4ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1200056F-A006-454C-89F5-AF33BCECD4A9}
