@@ -1,5 +1,6 @@
-﻿using LivrariaWeb.Models;
+﻿using System.Text;
 using Newtonsoft.Json;
+using LivrariaWeb.Models;
 
 namespace LivrariaWeb.Services;
 
@@ -56,6 +57,26 @@ public class ClienteApiService
             }
 
             return result;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+
+    public async Task<bool> CriandoCliente(ClienteViewModel cliente)
+    {
+        try
+        {
+            string json = JsonConvert.SerializeObject(cliente);
+            byte[] buffer = Encoding.UTF8.GetBytes(json);
+            ByteArrayContent byteArrayContent = new(buffer);
+            byteArrayContent.Headers.ContentType =
+                new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+
+            string url = ENDPOINT;
+            HttpResponseMessage responseMessage = await httpClient.PostAsync(url, byteArrayContent);
+            return responseMessage.IsSuccessStatusCode;
         }
         catch (Exception ex)
         {
